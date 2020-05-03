@@ -184,7 +184,7 @@ int checkForNewConnection(SOCKET* ListenSocket, SOCKET* ClientSocket) {
 	return 0;
 }
 
-int PotatoAPI::triggerDCOM(void)
+int PotatoAPI::OB123triggerDCOM(void)
 {
 	CoInitialize(nullptr);
 
@@ -642,7 +642,7 @@ int Juicy(wchar_t *clsid, BOOL brute)
 
 
 	test->startRPCConnectionThread();
-	test->triggerDCOM();
+	test->OB123triggerDCOM();
 
 	BOOL result = false;
 
